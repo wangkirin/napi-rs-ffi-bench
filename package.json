@@ -1,0 +1,18 @@
+{
+  "name": "napi-ffi-bench",
+  "version": "1.0.0",
+  "description": "A manual setup for benchmarking N-API-RS FFI overhead.",
+  "main": "index.js",
+  "scripts": {
+    "build": "napi build --platform --release",
+    "benchmark": "npm run build && tsc && node benchmark.js"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.0",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}
